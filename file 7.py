@@ -1,6 +1,13 @@
 # first string
 
-table = str.maketrans("abc", "xyz")
-text = "hello world"
-translated_text = text.translate(table)
-print(translated_text)  # আউটপুট: "xzyyx ooyzld"
+# first string
+firstString = "abc"
+secondString = "ghi"
+thirdString = "ab"
+
+string = "abcdef"
+print("Original string:", string)
+
+tranlsation = string.maketrans(firstString, secondString)
+print(tranlsation)
+print("Translated string:",string.translate(tranlsation))
