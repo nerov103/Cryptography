@@ -1,3 +1,4 @@
+#codecs 
 import string
 
 def rot13():
@@ -5,10 +6,26 @@ def rot13():
     upletter = string.ascii_uppercase
     shift_Key = 13
      
-    shift_letter = lowletter[shift_Key:] + lowletter[:shift_Key]
-    print(shift_letter)
+    shift_lower = lowletter[shift_Key:] + lowletter[:shift_Key]
+    shift_uper = upletter[shift_Key:] + upletter[:shift_Key]
 
-    
+    translator = str.maketrans(lowletter + upletter, shift_lower + shift_uper)
+    return translator
 
-rot13()
 
+def rot_13(message):
+    table = rot13()
+    return message.translate(table)
+
+
+# def main():
+#     user_input = input("Your Mess:")
+
+#     encrypted_mess = rot_13(user_input)
+#     print(f"Encrypted message: {encrypted_mess}")
+
+#     decrypted_message = rot_13(encrypted_mess)
+#     print(f"Decryped message:{decrypted_message}")
+
+
+# main()

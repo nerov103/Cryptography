@@ -1,6 +1,6 @@
 from string import *
 
-#here are constants defined in the string module
+#here are constants defind in the string module
 
 print(ascii_lowercase)
 print(ascii_uppercase)
