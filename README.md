@@ -34,4 +34,3 @@ Screenshots 3
 
 Cryptography is used by individuals and organizations to protect their privacy and keep their data and conversations confidential. It is a form of security for messaging and the study of communications
 
-## all right by mr.pydor
